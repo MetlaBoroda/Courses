@@ -1,12 +1,12 @@
 package metla.homework5;
 
 public class Worker {
-    String name;
-    String post;
-    String mail;
-    String number;
-    double salary;
-    int age;
+  private String name;
+    private String post;
+    private String mail;
+    private String number;
+    private double salary;
+    private int age;
 
     public Worker(String name, String post, String mail, String number, double salary, int age) {
         this.name = name;
@@ -20,5 +20,8 @@ public class Worker {
     public void out() {
         System.out.printf("ФИО: %s\nДолжность: %s\nПочта: %s\nТелефон %s\nЗарплата %.2f\nВозраст: %d\n\n", name, post, mail, number, salary, age);
 
+    }
+    public int getAge(){
+        return age;
     }
 }

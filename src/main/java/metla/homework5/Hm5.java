@@ -12,6 +12,6 @@ public class Hm5 {
         for (int i = 0; i<5;i++) w1[i].out();
         System.out.println();
         System.out.println("Работники 40+:");
-        for (int i = 0; i<5;i++) if (w1[i].age > 40) w1[i].out();
+        for (int i = 0; i<5;i++) if (w1[i].getAge() > 40) w1[i].out();
     }
 }
