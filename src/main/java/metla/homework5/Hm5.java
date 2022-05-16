@@ -1,7 +1,7 @@
 package metla.homework5;
 
 public class Hm5 {
-    public static void main(String[] args)
+    public static void main(String[] args){
         Worker[] w1 = new Worker[5];
         w1[0] = new Worker("a", "a", "a", "a", 1000, 20);
         w1[1] = new Worker("b", "b", "b", "b", 800, 66);
