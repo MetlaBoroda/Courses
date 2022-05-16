@@ -1,4 +1,4 @@
-package metla;
+package metla.homework1;
 
 
 public class HomeWorkApp {
