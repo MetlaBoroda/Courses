@@ -1,19 +1,27 @@
 package metla.homework6;
 
 public class Dog extends Animals {
-
-    public Dog(int run,int swim){
-        this.run = run;
-        this.swim = swim;
+    public Dog(String name) {
+        super(name);
     }
 
-    public void checkRun(int check){
-        if (check > run) System.out.println("не добежал");
-        else System.out.println("беги форест,бегиии");
+    @Override
+    public void run(int length) {
+        if (length <= 500)
+            System.out.println(" пёс " + getName() + " пробежал " + length + " метров ");
+        else {
+            System.out.println(" пёс " + getName() + " не смог пробежать " + length + " метров ");
+        }
 
     }
-    public void checkSwim(int check){
-        if (check < swim) System.out.println("ммм,водичка");
-        else System.out.println("бобик сдох(навенрое чихуахуа)");
+
+    @Override
+    public void swim(int length) {
+        if (length <= 10)
+            System.out.println(" пёс " + getName() + " проплыл " + length + " метров ");
+        else {
+            System.out.println(" пёс " + getName() + " не смог проплыть " + length + " метров ");
+
+        }
     }
 }
