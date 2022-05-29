@@ -1,4 +1,4 @@
-package metla.homework5;
+package metla.block_1.hm6.hm7.homework5;
 
 public class Worker {
   private String name;
@@ -7,6 +7,18 @@ public class Worker {
     private String number;
     private double salary;
     private int age;
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "name='" + name + '\'' +
+                ", post='" + post + '\'' +
+                ", mail='" + mail + '\'' +
+                ", number='" + number + '\'' +
+                ", salary=" + salary +
+                ", age=" + age +
+                '}';
+    }
 
     public Worker(String name, String post, String mail, String number, double salary, int age) {
         this.name = name;
@@ -18,7 +30,7 @@ public class Worker {
     }
 
     public void out() {
-        System.out.printf("ФИО: %s\nДолжность: %s\nПочта: %s\nТелефон %s\nЗарплата %.2f\nВозраст: %d\n\n", name, post, mail, number, salary, age);
+        System.out.print(toString());
 
     }
     public int getAge(){

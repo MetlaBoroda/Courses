@@ -1,4 +1,4 @@
-package metla.hm7;
+package metla.block_1.hm6.hm7;
 
 
 public class Plate {

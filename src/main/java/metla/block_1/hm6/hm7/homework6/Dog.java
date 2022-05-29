@@ -1,4 +1,4 @@
-package metla.homework6;
+package metla.block_1.hm6.hm7.homework6;
 
 public class Dog extends Animals {
     public Dog(String name) {
@@ -12,7 +12,6 @@ public class Dog extends Animals {
         else {
             System.out.println(" пёс " + getName() + " не смог пробежать " + length + " метров ");
         }
-
     }
 
     @Override
@@ -21,7 +20,6 @@ public class Dog extends Animals {
             System.out.println(" пёс " + getName() + " проплыл " + length + " метров ");
         else {
             System.out.println(" пёс " + getName() + " не смог проплыть " + length + " метров ");
-
         }
     }
 }

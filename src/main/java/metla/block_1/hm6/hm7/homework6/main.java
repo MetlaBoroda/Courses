@@ -1,10 +1,9 @@
-package metla.homework6;
+package metla.block_1.hm6.hm7.homework6;
 
 import java.util.Random;
 
 public class main {
     public static void main(String[] args) {
-
         Animals[] animals = {
                 new Cat("барсик"),
                 new Dog("бобик"),

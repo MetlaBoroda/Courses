@@ -1,4 +1,4 @@
-package metla.homework6;
+package metla.block_1.hm6.hm7.homework6;
 
 public class Cat extends Animals {
     public Cat(String name) {
@@ -12,12 +12,10 @@ public class Cat extends Animals {
         else {
             System.out.println(" кот " + getName() + " не смог пробежать " + length + " метров ");
         }
-
     }
 
     @Override
     public void swim(int length) {
         System.out.println("коты не плавают");
-
     }
 }
