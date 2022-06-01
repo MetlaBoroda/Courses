@@ -47,11 +47,12 @@ public class Cat implements Participant {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", Cat.class.getSimpleName() + "[", "]")
-                .add("maxRun=" + maxRun)
-                .add("maxJump=" + maxJump)
-                .add("id=" + id)
-                .toString();
+        final StringBuilder sb = new StringBuilder("Cat{");
+        sb.append("maxRun=").append(maxRun);
+        sb.append(", maxJump=").append(maxJump);
+        sb.append(", id=").append(id);
+        sb.append('}');
+        return sb.toString();
     }
 
 

@@ -12,6 +12,7 @@ public class Treadmill implements Let {
 
     @Override
     public boolean isWin(Participant p) {
+        if(p.participant())
         System.out.println("бежит ");
         return p.run(this.length);
     }

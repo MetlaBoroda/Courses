@@ -14,11 +14,12 @@ public class Robot implements Participant {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", Robot.class.getSimpleName() + "[", "]")
-                .add("maxRun=" + maxRun)
-                .add("maxJump=" + maxJump)
-                .add("id=" + id)
-                .toString();
+        final StringBuilder sb = new StringBuilder("Robot{");
+        sb.append("maxRun=").append(maxRun);
+        sb.append(", maxJump=").append(maxJump);
+        sb.append(", id=").append(id);
+        sb.append('}');
+        return sb.toString();
     }
 
     String jumpFalse = "робот " + id + " не перепрыгнул";

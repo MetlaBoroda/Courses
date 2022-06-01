@@ -9,6 +9,19 @@ public class Main {
         List<Participant> team = new ArrayList<>();
         List<Let> lets = new ArrayList<>();
 
+        Course course = new Course(
+                new Treadmill((int) (1 + Math.random() * 2500)),
+                new Wall((int) (1 + Math.random() * 19)),
+                new Treadmill((int) (1 + Math.random() * 2500)),
+                new Wall((int) (1 + Math.random() * 19)),
+                new Treadmill((int) (1 + Math.random() * 2500)),
+                new Wall((int) (1 + Math.random() * 19)));
+
+        Team team1 = new Team(new Man((int) (1 + Math.random() * 100), (int) (1 + Math.random() * 3)),
+                new Robot((int) (1 + Math.random() * 3000), (int) (1 + Math.random() * 20)),
+                new Cat((int) (1 + Math.random() * 1500), (int) (1 + Math.random() * 7)),
+                new Robot((int) 3000, (int) 25));
+
         for (int i = 0; i < 7; i++) {
             team.add(new Man((int) (1 + Math.random() * 100), (int) (1 + Math.random() * 3)));
             team.add(new Cat((int) (1 + Math.random() * 1500), (int) (1 + Math.random() * 7)));
@@ -24,5 +37,9 @@ public class Main {
                 let.isWin(participant);
             }
         }
+        team1.allTeam();
+        course.dolt(team1);
+        team1.winFromTeam();
+
     }
 }

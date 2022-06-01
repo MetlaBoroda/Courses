@@ -10,6 +10,7 @@ public class Wall implements Let {
 
     @Override
     public boolean isWin(Participant p) {
+        if(p.participant())
         System.out.println("ןנûדאוע ");
         return p.jump(height);
     }
