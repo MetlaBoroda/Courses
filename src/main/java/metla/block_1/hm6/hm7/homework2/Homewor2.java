@@ -1,4 +1,4 @@
-package metla.homework2;
+package metla.block_1.hm6.hm7.homework2;
 
 public class Homewor2 {
     public static void main(String[] args) {
