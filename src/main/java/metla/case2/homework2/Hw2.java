@@ -17,11 +17,10 @@ public class Hw2 {
                     arr1[k][l] = arr2[k][l];
                 }
             }
-        } catch (Exception myArraySizeException) {
-            System.out.println("массив номер 2 не соответствует размеру массива 1 " + myArraySizeException.toString());
+        } catch (Exception ex1) {
+            MyArraySizeException ex = new MyArraySizeException("Размер второго массива не соответствует размеру первого массива.", arr1.length, arr1[0].length);
+            System.out.println(ex.toString());
         } finally {
-
-
             arr1[0][0] = "54";
             arr1[0][1] = "1";
             arr1[0][2] = "1";
@@ -37,8 +36,9 @@ public class Hw2 {
                         sum += parseInt(arr1[i][j]);
                     }
                 }
-            } catch (Exception myArrayDataException) {
-                System.out.printf("элемент [%d][%d] не соответствует типу данных integer\n%s ", i, j, myArrayDataException.toString());
+            } catch (Exception ex2) {
+                MyArrayDataException ex = new MyArrayDataException ("Тип данных не соответствует типу integer", arr1 [i][j].getClass().getSimpleName());
+                System.out.println(ex.toString());
             }
         }
     }
